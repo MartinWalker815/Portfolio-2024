@@ -135,5 +135,19 @@ const textElement = document.querySelector('.text');
                 setTimeout(typeText, typingSpeed); 
             }
         }
-
+        
         typeText();
+
+//Ease in for about text
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const aboutText = document.querySelector('.about-text');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        aboutText.classList.add('in-view');
+                    }
+                });
+            });
+            observer.observe(aboutText);
+        });

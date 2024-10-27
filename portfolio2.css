@@ -185,8 +185,15 @@ body {
     padding: 0 50px;
     font-size: 18px;
     position: relative;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.6s ease, transform 1.6s ease;
 }
 
+.about-text.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 .hey {
     font-family: "Cedarville Cursive", cursive;
