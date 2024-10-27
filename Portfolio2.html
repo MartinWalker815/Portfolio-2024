@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio2.css">
+    <title>Portfolio Project 1</title>
+</head>
+
+<body>
+    
+    <section>
+        <canvas id="myCanvas" role="img" aria-label="Animated background canvas for visual effect."></canvas>
+        <header class="header">
+            <h1 class="site-title">MARTIN WALKER</h1>
+            <p class="site-description">Frontend Web Developer</p>
+
+            <nav aria-label="Social Media Links" class="header-icons">
+                <a aria-label="My LinkedIn Profile" target="_blank" href="https://uk.linkedin.com/">
+                    <img src="/Images2/linkedin-icon.png" alt="LinkedIn Icon" class="social-icon">
+                </a>
+                <a aria-label="My Email Address" href="mailto:mart815@live.com?subject=Inquiry%20About%20Front-End%20Development%20Services%20&body=Hello%20Martin,%20I%20would%20like%20to%20get%20in%20touch!" target="_blank">
+                    <img src="/Images2/email-icon.png" alt="Email Icon" class="social-icon">
+                </a>
+                
+                <a aria-label="My GitHub Profile" target="_blank" href="https://github.com/MartinWalker815">
+                    <img src="Images2/github-icon.png" alt="GitHub Icon" class="social-icon">
+                </a>
+            </nav>
+
+            <nav aria-label="Main Navigation" class="header-links">
+                <a class="link" href="#about" data-scroll="">About Me</a>
+                <a class="link" href="#projects" data-scroll="">Projects</a>
+            </nav>
+
+            <nav aria-label="Scroll Down">
+                <a href="#about" class="scroll-down">
+                    <img src="Images2/chevron-arrow.png" alt="Scroll Down Arrow">
+                    <i class="chevron-down" aria-hidden="true"></i>
+                </a>
+            </nav>
+        </header>
+    </section>
+
+    <main>
+        <!-- About Section -->
+        <section id="about">
+            <div class="about-container">
+                <h2 class="visually-hidden">About Me</h2>
+                <img src="/Images2/profile1.JPG" alt="Martin Walker, Frontend Developer" class="about-image">
+                <article class="about-text">
+                    <h3 class="hey">Hey there!</h3>
+                    <p>My name is Martin and I am currently studying to become a front-end developer, specialising in <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b> to create interactive and responsive websites.</p>
+                    <p>As a teacher, I developed strong communication, adaptability, and problem-solving skills—qualities that are just as important in web development. I’m used to explaining complex ideas in simple ways, which helps me create clear, user-friendly websites.</p>
+                    <p>Alongside my teaching career, I’m a musician with experience in writing, performing, recording, and mixing music, which has sharpened my attention to detail and technical abilities. I’m excited to take on new challenges in web development and apply my diverse skills to create engaging, high-quality websites.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Divider 1 -->
+        <div class="wave-divider1" aria-hidden="true">
+            <svg viewBox="0 0 1440 320">
+                <path class="wave-path1" d="M0,64L48,80C96,96,192,128,288,138.7C384,149,480,139,576,138.7C672,139,768,149,864,170.7C960,192,1056,224,1152,240C1248,256,1344,256,1392,256L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <header class="projects-container">
+                <h2>WHAT I DO</h2>
+            <div class="typewriter-container">
+                <span class="typewriter" aria-live="polite"><span class="text"></span></span>
+            </div>
+                <h1 id="typing-title">Explore my projects:</h1>
+            
+
+            <div class="projects-container">
+                <div class="grid-container">
+                    <article class="grid-item">
+                        <a href="https://www.github.com" aria-label="Project 1">
+                            <figure>
+                                <img src="Images2/project1.png" alt="Screenshot of Project 1" class="grid-image">
+                                <figcaption class="grid-text" style="display: none;"><b>Personal Portfolio</b></figcaption> 
+                            </figure>
+                            <h3 class="grid-heading">Personal Portfolio</h3> 
+                            <p class="grid-description">This is my personal portfolio site, where I started exploring JavaScript functions to build an interactive and visually appealing website.</p>
+                        </a>
+                    </article>
+        
+                    <article class="grid-item">
+                        <a href="https://www.gloomisokay.com" aria-label="Project 2">
+                            <figure>
+                                <img src="Images2/project2.png" alt="Screenshot of Project 2" class="grid-image">
+                                <figcaption class="grid-text" style="display: none;"><b>Progressive Rock Band</b></figcaption> 
+                            </figure>
+                            <h3 class="grid-heading">Progressive Rock Band</h3> 
+                            <p class="grid-description">This is a placeholder for a future project</p>
+                        </a>
+                    </article>
+        
+                    <article class="grid-item">
+                        <a href="https://www.tomekeeperproductions.com/" aria-label="Project 3">
+                            <figure>
+                                <img src="Images2/project3.png" alt="Screenshot of Project 3" class="grid-image">
+                                <figcaption class="grid-text" style="display: none;"><b>Tomekeeper Productions</b></figcaption> 
+                            </figure>
+                            <h3 class="grid-heading">Tomekeeper Productions</h3> 
+                            <p class="grid-description">This is a placeholder for a future project</p>
+                        </a>
+                    </article>
+        
+                    <article class="grid-item">
+                        <a href="https://www.github.com" aria-label="Project 4">
+                            <figure>
+                                <img src="Images2/project4.jpg" alt="Screenshot of Project 4" class="grid-image">
+                                <figcaption class="grid-text" style="display: none;"><b>Project 4</b></figcaption> 
+                            </figure>
+                            <h3 class="grid-heading">Project 4</h3> 
+                            <p class="grid-description">This is a placeholder for a future project</p>
+                        </a>
+                    </article>
+        
+                    <article class="grid-item">
+                        <a href="https://www.github.com" aria-label="Project 5">
+                            <figure>
+                                <img src="Images2/project5.jpg" alt="Screenshot of Project 5" class="grid-image">
+                                <figcaption class="grid-text" style="display: none;"><b>Project 5</b></figcaption> 
+                            </figure>
+                            <h3 class="grid-heading">Project 5</h3> 
+                            <p class="grid-description">This is a placeholder for a future project</p>
+                        </a>
+                    </article>
+        
+                    <article class="grid-item">
+                        <a href="https://www.github.com" aria-label="Project 6">
+                            <figure>
+                                <img src="Images2/project6.jpg" alt="Screenshot of Project 6" class="grid-image">
+                                <figcaption class="grid-text" style="display: none;"><b>Project 6</b></figcaption> 
+                            </figure>
+                            <h3 class="grid-heading">Project 6</h3> 
+                            <p class="grid-description">This is a placeholder for a future project</p>
+                        </a>
+                    </article>
+                </div>
+            </div>
+            </header>
+        </section>
+
+
+
+        <!-- Divider 2 -->
+        <div class="wave-divider2" aria-hidden="true">
+            <svg viewBox="0 0 1440 320">
+                <path class="wave-path2" d="M0,64L48,80C96,96,192,128,288,138.7C384,149,480,139,576,138.7C672,139,768,149,864,170.7C960,192,1056,224,1152,240C1248,256,1344,256,1392,256L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+    </main>
+
+    <footer>
+        <h2>Contact Me</h2>
+    <address>
+        <p>Email: <a href="mailto:mart815@live.com">mart815@live.com</a></p>
+    </address>
+        <p>&copy; 2024 Martin Walker</p>
+    </footer>
+
+    <script src="portfolio2.js"></script>
+</body>
+</html>
