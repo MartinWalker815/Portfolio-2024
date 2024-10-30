@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="portfolio2.css">
+    <link rel="stylesheet" href="style.css">
     <title>Portfolio Project 1</title>
 </head>
 
@@ -23,14 +23,14 @@
 
             <nav aria-label="Social Media Links" class="header-icons">
                 <a aria-label="My LinkedIn Profile" target="_blank" href="https://uk.linkedin.com/">
-                    <img src="/Images2/linkedin-icon.png" alt="LinkedIn Icon" class="social-icon">
+                    <img src="/img/linkedin-icon.png" alt="LinkedIn Icon" class="social-icon">
                 </a>
                 <a aria-label="My Email Address" href="mailto:mart815@live.com?subject=Inquiry%20About%20Front-End%20Development%20Services%20&body=Hello%20Martin,%20I%20would%20like%20to%20get%20in%20touch!" target="_blank">
-                    <img src="/Images2/email-icon.png" alt="Email Icon" class="social-icon">
+                    <img src="/img/email-icon.png" alt="Email Icon" class="social-icon">
                 </a>
                 
                 <a aria-label="My GitHub Profile" target="_blank" href="https://github.com/MartinWalker815">
-                    <img src="Images2/github-icon.png" alt="GitHub Icon" class="social-icon">
+                    <img src="img/github-icon.png" alt="GitHub Icon" class="social-icon">
                 </a>
             </nav>
 
@@ -41,7 +41,7 @@
 
             <nav aria-label="Scroll Down">
                 <a href="#about" class="scroll-down">
-                    <img src="Images2/chevron-arrow.png" alt="Scroll Down Arrow">
+                    <img src="img/chevron-arrow.png" alt="Scroll Down Arrow">
                     <i class="chevron-down" aria-hidden="true"></i>
                 </a>
             </nav>
@@ -49,11 +49,22 @@
     </section>
 
     <main>
+        <!-- Floating Navigation Button -->
+        <div class="nav-button" onclick="toggleMenu()">☰</div>
+
+        <!-- Collapsible Navigation Menu -->
+        <div class="nav-menu" id="navMenu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>    
+
         <!-- About Section -->
         <section id="about">
             <div class="about-container">
                 <h2 class="visually-hidden">About Me</h2>
-                <img src="/Images2/profile1.JPG" alt="Martin Walker, Frontend Developer" class="about-image">
+                <img src="/img/profile1.JPG" alt="Martin Walker, Frontend Developer" class="about-image">
                 <article class="about-text">
                     <h3 class="hey">Hey there!</h3>
                     <p>My name is Martin and I am currently studying to become a front-end developer, specialising in <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b> to create interactive and responsive websites.</p>
@@ -85,7 +96,7 @@
                     <article class="grid-item">
                         <a href="https://www.github.com" aria-label="Project 1">
                             <figure>
-                                <img src="Images2/project1.png" alt="Screenshot of Project 1" class="grid-image">
+                                <img src="img/project1.png" alt="Screenshot of Project 1" class="grid-image">
                                 <figcaption class="grid-text" style="display: none;"><b>Personal Portfolio</b></figcaption> 
                             </figure>
                             <h3 class="grid-heading">Personal Portfolio</h3> 
@@ -96,7 +107,7 @@
                     <article class="grid-item">
                         <a href="https://www.gloomisokay.com" aria-label="Project 2">
                             <figure>
-                                <img src="Images2/project2.png" alt="Screenshot of Project 2" class="grid-image">
+                                <img src="img/project2.png" alt="Screenshot of Project 2" class="grid-image">
                                 <figcaption class="grid-text" style="display: none;"><b>Progressive Rock Band</b></figcaption> 
                             </figure>
                             <h3 class="grid-heading">Progressive Rock Band</h3> 
@@ -107,7 +118,7 @@
                     <article class="grid-item">
                         <a href="https://www.tomekeeperproductions.com/" aria-label="Project 3">
                             <figure>
-                                <img src="Images2/project3.png" alt="Screenshot of Project 3" class="grid-image">
+                                <img src="/img/project3.png" alt="Screenshot of Project 3" class="grid-image">
                                 <figcaption class="grid-text" style="display: none;"><b>Tomekeeper Productions</b></figcaption> 
                             </figure>
                             <h3 class="grid-heading">Tomekeeper Productions</h3> 
@@ -118,7 +129,7 @@
                     <article class="grid-item">
                         <a href="https://www.github.com" aria-label="Project 4">
                             <figure>
-                                <img src="Images2/project4.png" alt="Screenshot of Project 4" class="grid-image">
+                                <img src="img/project4.png" alt="Screenshot of Project 4" class="grid-image">
                                 <figcaption class="grid-text" style="display: none;"><b>Project 4</b></figcaption> 
                             </figure>
                             <h3 class="grid-heading">Food Blog</h3> 
@@ -129,7 +140,7 @@
                     <article class="grid-item">
                         <a href="https://www.github.com" aria-label="Project 5">
                             <figure>
-                                <img src="Images2/project5.png" alt="Screenshot of Project 5" class="grid-image">
+                                <img src="img/project5.png" alt="Screenshot of Project 5" class="grid-image">
                                 <figcaption class="grid-text" style="display: none;"><b>Project 5</b></figcaption> 
                             </figure>
                             <h3 class="grid-heading">Project 5</h3> 
@@ -140,7 +151,7 @@
                     <article class="grid-item">
                         <a href="https://www.github.com" aria-label="Project 6">
                             <figure>
-                                <img src="Images2/project6.png" alt="Screenshot of Project 6" class="grid-image">
+                                <img src="img/project6.png" alt="Screenshot of Project 6" class="grid-image">
                                 <figcaption class="grid-text" style="display: none;"><b>Project 6</b></figcaption> 
                             </figure>
                             <h3 class="grid-heading">Project 6</h3> 
@@ -162,7 +173,7 @@
         </div>
     </main>
 
-    <footer>
+    <footer id="contact">
         <h2>Contact Me</h2>
     <address>
         <p>Email: <a href="mailto:mart815@live.com">mart815@live.com</a></p>
@@ -170,6 +181,6 @@
         <p>&copy; 2024 Martin Walker</p>
     </footer>
 
-    <script src="portfolio2.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

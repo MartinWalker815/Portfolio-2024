@@ -10,11 +10,11 @@ var context = canvas.getContext('2d');
 var mouse = {
     x: undefined,
     y: undefined
-}
+};
 
-
-var maxRadius = 5;
-//var minRadius = 2;
+// Determine circle settings based on screen size
+var circleCount = window.innerWidth > 768 ? 300 : 100; // Fewer circles on mobile
+var maxRadius = window.innerWidth > 768 ? 5 : 3; // Smaller max radius on mobile
 
 var colorArray = [
     '#344e41',
@@ -33,62 +33,63 @@ window.addEventListener('resize', function() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
+    // Update circle settings on resize
+    circleCount = window.innerWidth > 768 ? 300 : 100;
+    maxRadius = window.innerWidth > 768 ? 5 : 3;
+
     init();
-})
+});
 
-function Circle(x, y, dx, dy, radius) {
-    this.x = x;
-    this.y = y;
-    this.dx = dx;
-    this.dy = dy;
-    this.radius = radius;
-    this.minRadius = radius;
-    this.color = colorArray[Math.floor(Math.random() * colorArray.length)];
+// Circle Factory Function
+function createCircle(x, y, dx, dy, radius) {
+    const minRadius = radius;
+    const color = colorArray[Math.floor(Math.random() * colorArray.length)];
 
-    this.draw = function() {
+    function draw() {
         context.beginPath();
-        context.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
-        context.fillStyle = this.color;
+        context.arc(x, y, radius, 0, Math.PI * 2, false);
+        context.fillStyle = color;
         context.fill();
     }
 
-    this.update = function() {
-        if (this.x + this.radius > innerWidth || this.x - this.radius < 0) {
-            this.dx = -this.dx;
+    function update() {
+        if (x + radius > innerWidth || x - radius < 0) {
+            dx = -dx;
         }
 
-        if (this.y + this.radius > innerHeight || this.y - this.radius < 0) {
-            this.dy = -this.dy;
+        if (y + radius > innerHeight || y - radius < 0) {
+            dy = -dy;
         }
 
-        this.x += this.dx;
-        this.y += this.dy;
+        x += dx;
+        y += dy;
 
         // Interactivity
-        if (mouse.x - this.x < 50 && mouse.x - this.x > -50 && mouse.y - this.y < 50 && mouse.y - this.y > -50) {
-            if (this.radius < maxRadius) {
-                this.radius += 1;
+        if (mouse.x - x < 50 && mouse.x - x > -50 && mouse.y - y < 50 && mouse.y - y > -50) {
+            if (radius < maxRadius) {
+                radius += 1;
             }
-        } else if (this.radius > 2) {
-            this.radius -= 1;
+        } else if (radius > minRadius) {
+            radius -= 1;
         }
 
-        this.draw();
+        draw();
     }
+
+    return { update };
 }
 
 var circleArray = [];
 
 function init() {
-
-circleArray = [];
-    for (var i = 0; i < 300; i++) {
+    circleArray = [];
+    for (var i = 0; i < circleCount; i++) {
         var radius = Math.random() * 3 + 1;
         var x = Math.random() * (innerWidth - radius * 2) + radius;
         var y = Math.random() * (innerHeight - radius * 2) + radius;
         var dx = (Math.random() - 0.5);
         var dy = (Math.random() - 0.5);
-        circleArray.push(new Circle(x, y, dx, dy, radius));
+        circleArray.push(createCircle(x, y, dx, dy, radius));
     }
 }
 
@@ -103,7 +104,6 @@ function animate() {
 
 init();
 animate();
-
 
 //Typing Animation
 
@@ -151,3 +151,10 @@ const textElement = document.querySelector('.text');
             });
             observer.observe(aboutText);
         });
+
+
+//Nav Bar
+        function toggleMenu() {
+            const navMenu = document.getElementById("navMenu");
+            navMenu.style.display = navMenu.style.display === "flex" ? "none" : "flex";
+          };
