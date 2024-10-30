@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Portfolio Project 1</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
@@ -22,7 +23,7 @@
             <p class="site-description">Frontend Web Developer</p>
 
             <nav aria-label="Social Media Links" class="header-icons">
-                <a aria-label="My LinkedIn Profile" target="_blank" href="https://uk.linkedin.com/">
+                <a aria-label="My LinkedIn Profile" target="_blank" href="https://www.linkedin.com/in/martin-walker-0b8038336/">
                     <img src="/img/linkedin-icon.png" alt="LinkedIn Icon" class="social-icon">
                 </a>
                 <a aria-label="My Email Address" href="mailto:mart815@live.com?subject=Inquiry%20About%20Front-End%20Development%20Services%20&body=Hello%20Martin,%20I%20would%20like%20to%20get%20in%20touch!" target="_blank">
@@ -64,7 +65,7 @@
         <section id="about">
             <div class="about-container">
                 <h2 class="visually-hidden">About Me</h2>
-                <img src="/img/profile1.JPG" alt="Martin Walker, Frontend Developer" class="about-image">
+                <img src="/img/profile1.png" alt="Martin Walker, Frontend Developer" class="about-image">
                 <article class="about-text">
                     <h3 class="hey">Hey there!</h3>
                     <p>My name is Martin and I am currently studying to become a front-end developer, specialising in <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b> to create interactive and responsive websites.</p>
@@ -173,11 +174,24 @@
         </div>
     </main>
 
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Contact Me</h2>
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+            
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+            
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+            
+                <button type="submit">Send Message</button>
+        </form>
+    </section>
+
     <footer id="contact">
-        <h2>Contact Me</h2>
-    <address>
-        <p>Email: <a href="mailto:mart815@live.com">mart815@live.com</a></p>
-    </address>
         <p>&copy; 2024 Martin Walker</p>
     </footer>
 

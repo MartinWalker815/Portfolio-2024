@@ -138,23 +138,24 @@ const textElement = document.querySelector('.text');
         
         typeText();
 
-//Ease in for about text
-
-        document.addEventListener("DOMContentLoaded", () => {
-            const aboutText = document.querySelector('.about-text');
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        aboutText.classList.add('in-view');
-                    }
-                });
-            });
-            observer.observe(aboutText);
-        });
-
 
 //Nav Bar
         function toggleMenu() {
             const navMenu = document.getElementById("navMenu");
             navMenu.style.display = navMenu.style.display === "flex" ? "none" : "flex";
-          };
+};
+
+
+// Initialize ScrollReveal
+const sr = ScrollReveal({
+    distance: '50px',        // Adjust distance of the reveal
+    duration: 800,           // Duration of animation (in ms)
+    easing: 'ease-in-out',   // Animation easing
+    reset: true             // Animations only happen once
+});
+
+// Apply effects to elements
+sr.reveal('.about-container', { origin: 'top' });
+sr.reveal('.about-text', { origin: 'bottom', interval: 200 });
+sr.reveal('.projects-container', { origin: 'bottom', delay: 300 });
+sr.reveal('.contact-container', { origin: 'bottom', delay: 200 });

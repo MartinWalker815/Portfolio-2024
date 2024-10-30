@@ -214,7 +214,7 @@ body {
 
 .about-image:hover {
     transform: rotateY(10deg) rotateX(10deg);
-    filter: brightness(2.2) contrast(1.2) saturate(0%); 
+    filter: brightness(1.2) contrast(1.2) saturate(0%); 
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2); 
 }
 
@@ -227,9 +227,6 @@ body {
     padding: 0 50px;
     font-size: 18px;
     position: relative;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1.6s ease, transform 1.6s ease;
 }
 
 .about-text.in-view {
@@ -414,6 +411,63 @@ svg {
     white-space: nowrap; 
 }
 
+/* Contact Section */
+#contact {
+    display: flex;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--off-white);
+    border-radius: 8px;
+    text-align: center;
+}
+
+#contact h2 {
+    text-align: center;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+#contact label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.contact-container {
+    width: 100%;
+    max-width: 500px; 
+    text-align: center; 
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contact button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #588157;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Nunito", sans-serif;
+}
+
+#contact button:hover {
+    background-color: #3a5a40;
+}
+
+form {
+    display: inline-block;
+}
 
 /* Footer */
 
