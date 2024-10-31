@@ -26,6 +26,8 @@ If any code from other sources has been used in this project, it will be properl
 - **Responsiveness Testing**: The layout has been checked on various devices and screen sizes to confirm that it remains user-friendly.
 - **Cross-Browser Testing**: The portfolio has been tested on popular browsers (Chrome, Firefox, Safari) to ensure consistent performance.
 
+![Lighthouse Test Results](img/lighthouse-test.png)
+
 ## Conclusion
 
 Thank you for visiting my portfolio! I hope you find it informative and inspiring. Please feel free to reach out with any questions or feedback.

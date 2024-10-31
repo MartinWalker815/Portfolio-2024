@@ -11,8 +11,6 @@
     --light-green: #588157;
     --lighter-green: #a3b18a;
     --off-white: #dad7cd;
-    
-    box-sizing: border-box;
 }
 
 
@@ -474,6 +472,7 @@ svg {
 /* Right side - Contact Form */
 .contact-form {
     flex: 1;
+    padding-right: 0 20px;
 }
 
 .contact-form label {
@@ -494,10 +493,10 @@ svg {
 
 .contact-form button {
     display: block;
-    width: 100%;
+    width: auto;
+    margin: 15px auto; 
     padding: 10px;
-    margin-top: 15px;
-    background-color: #588157;
+    background-color: var(--dark-green);
     color: white;
     font-size: 16px;
     border: none;
@@ -507,7 +506,8 @@ svg {
 }
 
 .contact-form button:hover {
-    background-color: #3a5a40;
+    background-color: var(--lighter-green);
+    border-style: solid;
 }
 
 /* Footer styling */
@@ -554,6 +554,25 @@ footer {
         line-height: 50px;
         margin-bottom: 30px;
     }
+
+    .contact-container {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .contact-info {
+        padding-right: 0;
+        text-align: center;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .contact-form {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+
 
     footer {
         padding: 10px 0;
