@@ -176,22 +176,34 @@
 
     <section id="contact">
         <div class="contact-container">
-            <h2>Contact Me</h2>
-                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-            
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-            
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-            
+            <div class="contact-info">
+                <h2>Contact Me</h2>
+                <p>Feel free to get in touch for collaborations, inquiries, or simply to say hello! Whether you have a project idea, need assistance, or want to connect, I’d love to hear from you.</p>
+                <div class="social-links">
+                    <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+                        <img src="img/github-icon.png" alt="GitHub" class="social-icon">
+                    </a>
+                    <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn">
+                        <img src="img/linkedin-icon.png" alt="LinkedIn" class="social-icon">
+                    </a>
+                </div>
+            </div>
+            <form class="contact-form" action="https://formspree.io/f/mzzbebqq" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
                 <button type="submit">Send Message</button>
-        </form>
+            </form>
+        </div>
     </section>
 
-    <footer id="contact">
+    <footer id="footer">
         <p>&copy; 2024 Martin Walker</p>
     </footer>
 
