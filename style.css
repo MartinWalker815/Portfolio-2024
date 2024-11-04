@@ -151,6 +151,9 @@ body {
     font-size: 20px;
     z-index: 1000;
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 
   /* Styling for the collapsible navigation menu */
