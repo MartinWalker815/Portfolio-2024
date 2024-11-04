@@ -140,9 +140,17 @@ const textElement = document.querySelector('.text');
 
 
 //Nav Bar
-        function toggleMenu() {
-            const navMenu = document.getElementById("navMenu");
-            navMenu.style.display = navMenu.style.display === "flex" ? "none" : "flex";
+function toggleMenu() {
+    const navMenu = document.getElementById("navMenu");
+    const navButton = document.querySelector(".nav-button");
+
+    if (navMenu.style.display === "flex") {
+        navMenu.style.display = "none";
+        navButton.textContent = "☰"; // Switch back to hamburger icon
+    } else {
+        navMenu.style.display = "flex";
+        navButton.textContent = "X"; // Show "X" when open
+    }
 };
 
 

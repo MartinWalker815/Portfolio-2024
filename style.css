@@ -81,9 +81,8 @@ body {
     justify-content: center; 
     gap: 15px; 
     z-index: 2;  
-    position: relative;  
+    position: relative;
 }
-
 
 .social-icon {
     width: 40px;
@@ -145,22 +144,25 @@ body {
     background-color: #333;
     opacity: 90%;
     color: var(--off-white);
-    padding: 10px 15px;
-    border-radius: 50%;
+    width: 40px;
+    height: 40px;      
+    border-radius: 50%;         
     cursor: pointer;
     font-size: 20px;
     z-index: 1000;
+    border: none;
 }
 
   /* Styling for the collapsible navigation menu */
 .nav-menu {
     position: fixed;
-    top: 60px;
-    right: 20px;
+    top: 15px;
+    right: 50px;
+    padding-top: 10px;
     background-color: var(--off-white);
     opacity: 100%;
     width: 150px;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: none;
     flex-direction: column;
@@ -168,7 +170,7 @@ body {
 }
 
 .nav-menu a {
-    padding: 10px;
+    padding: 20px;
     text-decoration: none;
     color: var(--medium-green);
     display: block;
