@@ -260,6 +260,48 @@ body {
     border: 0;
 }
 
+.skills {
+    margin-top: 40px;
+}
+
+.skills h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-list li img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.skills-list li img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+.skills-title {
+    text-align: center;
+    font-family: "Cedarville Cursive", cursive;
+    color: #8d114d;
+    font-size: 80px;
+    font-weight: normal;
+    line-height: 80px;
+    letter-spacing: 1px;
+    text-transform: none;
+}
+
 /* Dividers */
 
 .wave-divider1 {
